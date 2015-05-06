@@ -1,0 +1,60 @@
+<!--PicMe 
+
+TECHNICAL REQUIREMENTS
+
+
+Link both pages together using `a` tag.
+Use a unique `title` and a single unique `h1` tags.
+Show images using `img` tags including unique `alt` attributes.
+Use an external CSS stylesheet to style your pages.
+Select at least 5 elements on the page and use at least 5 different css properties (`font-size`, `color`, `font-family`, `background`, `text-decoration`).
+Code the pages using at least 6 different HTML tags (`h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `p`, `ul`, `ol`, `a`, `img`).
+Follow naming conventions, maintain consistency across .html and .css files.
+Indent nested elements to increase your code's readability.
+Bonus
+
+Experiment by adding additional HTML tags and CSS properties we did not cover in class - explore!
+Really challenge yourself and read up on Google Maps (https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map) then, add a map using an address of your choice to the contact or about page:
+
+-->
+
+<!DOCTYPE html>
+<head>
+	<title>PicMe.About</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://maps.googleapis.com/maps/api/js">function initialize() {
+		var mapCanvas = document.getElementById('map-canvas');
+		var mapOptions = {
+     		 center: new google.maps.LatLng(44.5403, -78.5463),
+      			zoom: 8,
+      		mapTypeId: google.maps.MapTypeId.ROADMAP
+    	}
+    	var map = new google.maps.Map(mapCanvas);
+    }
+	</script>
+</head>
+<body>
+	<h1>Pic<em>Me<em></h1>
+	<h2>PicMe is a marketplace pairing spectators at sporting events and their photographs with individual participants.</h2>
+	<img src="image.jpg" alt="ski marathon">
+	<p>Professional photographers are present at sporting events, but they are not well distributed and their photographs are expensive. The chances of having a good action photo taken are relatively slim. PicMe transforms the hundreds, even thousands, of spectators into event photographers. They can snap an action photo, tag the subject with their unique participant number and upload to the app. The participant is then able to download the tagged photographs from the app for a fee.</p>
+	<h3>Why PicMe?</h3>
+	<ol>
+		<li>Low-cost, high-quality personalized photographs</li>
+		<li>More photos, greater variety and better action shots</li>
+		<li>Get paid to take event photos</li>
+	</ol>
+	<footer>	
+		<nav>
+			<ul>
+				<li>About</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</body>
+
+</html>
